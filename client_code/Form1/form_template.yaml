@@ -1,48 +1,35 @@
 components:
-- layout_properties: {grid_position: 'SRYHQA,FXHHVJ'}
+- layout_properties: {full_width_row: false, grid_position: 'SRYHQA,FXHHVJ'}
   name: image_1
-  properties: {source: _/theme/qr-code.png}
-  type: Image
-- data_bindings: []
-  event_bindings: {show: Titre_show}
-  layout_properties: {full_width_row: false, grid_position: 'NUCMHO,SXOVRC', row_background: ''}
-  name: Titre
   properties:
-    align: center
-    background_color: ''
-    bold: false
+    alt_text: llllll
     border: ''
-    font_size: 20
-    icon: ''
-    icon_color: ''
-    icon_size: null
-    italic: false
-    scale: medium
-    spacing:
-      margin: ['8', null, '8', null]
-      padding: [null, null, null, '24']
-    text: 🔒 Inscription pour badge d'accès à nos cours
-    text_color: '#000000'
-    underline: false
-    visible: true
-  type: form:dep_lin1x4oec0ytd:_Components.Heading
+    display_mode: original_size
+    margin: [null, null, '0', null]
+    source: _/theme/qr-code.png
+    vertical_align: center
+  type: Image
+- layout_properties: {grid_position: 'AETYQT,YPBUJP'}
+  name: image_2
+  properties: {}
+  type: Image
 - components:
   - components:
     - layout_properties: {slot: card-content-container-slot}
       name: nom_complet_box
-      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: NOM COMPLET, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: Nom & Prénom(s), subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: NOM COMPLET, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: 'mi:user_attributes', leading_icon_color: '#f0c300', placeholder: Nom & Prénom(s), subcontent_color: 'theme:On Primary', text: '', trailing_icon: '', trailing_icon_color: 'theme:On Primary', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
     - layout_properties: {slot: card-content-container-slot}
       name: titre_box
-      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 30, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: TITRE-FONCTION, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: 'Ex: Développeur, Stagiaire', subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 30, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: TITRE-FONCTION, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: 'mi:cases', leading_icon_color: '#f0c300', placeholder: 'Ex: Développeur, Stagiaire', subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
     - layout_properties: {slot: card-content-container-slot}
       name: organisation_box
-      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: Organisation, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: Vous êtes une entreprise ou une école (pas obligatoire), subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: Organisation, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: 'mi:domain', leading_icon_color: '#f0c300', placeholder: 'Entreprise, école ou indépendant ?', subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
     - layout_properties: {slot: card-content-container-slot}
       name: email_box
-      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: null, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: Adresse E-mail, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: Votre mail professionnel, subcontent_color: 'theme:On Primary', text: '', type: email, visible: true}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: null, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: Adresse E-mail, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: 'mi:alternate_email', leading_icon_color: '#f0c300', placeholder: Votre mail professionnel, subcontent_color: 'theme:On Primary', text: '', type: email, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
     - data_bindings: []
       layout_properties: {slot: card-content-container-slot}
@@ -51,7 +38,9 @@ components:
         appearance: filled
         background_color: '#f0c300'
         border_color: theme:On Primary
-        items: ['', 'Saturday, July 5, 2025', 'Saturday, July 12, 2025', 'Saturday, July 19, 2025']
+        icon: ''
+        items: [Programmation Python (POO & Algorithmes), Introduction au Cloud Computing (AWS/Azure/GCP), 'Cybersécurité : Principes du Hacking Éthique', Maîtrise de l'IDE VS Code (Productivité Développeur), Développement Web Full Stack avec Django / Flask, Base de Données SQL & NoSQL (PostgreSQL / MongoDB), 'Séminaire : Architecture Logicielle Orientée Microservice (18 Avril 2026, Conférence d''une journée)', 'Atelier : GitHub et Collaboration / Pull Requests & Reviews (16 Septembre 2026, Atelier pratique)']
+        items_bold: false
         label: Cours&Events
         label_bold: true
         label_color: theme:On Secondary Container
@@ -74,7 +63,7 @@ components:
         bold: true
         font_family: poppins
         font_size: null
-        icon: mi:10mp
+        icon: mi:badge
         icon_color: '#000'
         icon_size: null
         italic: false
@@ -91,6 +80,31 @@ components:
     name: card_content_container_1
     properties:
       margin: ['50', '16', '20', '16']
+    type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+  - components:
+    - event_bindings: {click: link_1_click}
+      layout_properties: {slot: card-content-container-slot}
+      name: link_1
+      properties:
+        align: center
+        background_color: ''
+        bold: false
+        border: ''
+        font_family: Montserrat
+        icon: mi:offline_share
+        icon_color: theme:On Secondary Container
+        italic: true
+        spacing:
+          margin: [null, null, '', null]
+          padding: [null, null, '', null]
+        text: Découvre notre gestionnaire de tâches en ligne
+        text_color: theme:On Secondary Container
+        url: https://adjagbafortune.github.io/listable-app/
+      type: form:dep_lin1x4oec0ytd:_Components.Link
+    layout_properties: {slot: card-content}
+    name: card_content_container_2
+    properties:
+      margin: ['30', '16', '30', '16']
     type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
   layout_properties: {grid_position: 'CAVRJX,VAYAOT'}
   name: card_1

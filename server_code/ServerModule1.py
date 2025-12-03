@@ -1,8 +1,4 @@
-# Fichier ServerModule1.py corrigé
-
-# 🚨 AJOUTEZ CETTE LIGNE MANQUANTE 🚨
 import anvil 
-# -----------------------------------
 
 import anvil.email
 import anvil.server
@@ -11,28 +7,25 @@ from anvil.pdf import PDFRenderer
 import datetime 
 
 @anvil.server.callable
-# Mise à jour des arguments
+# Nos arguments
 def create_pdf(email, name, title, organisation, event):
-  # ... (reste du code inchangé)
-  # Date Dynamique : génère la date/heure actuelle au format désiré
+  # Date Dynamique : génèration de la date/heure actuelle au format désiré
   date_badge = datetime.datetime.now().strftime("Émis le %d %B %Y à %H:%M") 
 
-  # Génération du PDF : 
-  # 'email' n'est pas passé au render_form car il n'est pas dans le template Ticket
+  # Génération du PDF
   pdf = PDFRenderer(filename=f'{name} Badge.pdf').render_form(
     'Ticket', 
     name=name, 
     date=date_badge, 
     title=title, 
     organisation=organisation, 
-    event=event # Événement choisi
+    event=event
   )
   return pdf
 
 @anvil.server.callable
 def send_pdf_email(email, name, title, organisation, event):
-  # 🚨 CORRECTION 2 : L'email DOIT être passé à create_pdf 🚨
-  # Appelle la fonction de création PDF mise à jour
+  # Appel de la fonction de création PDF mise à jour
   pdf = create_pdf(email, name, title, organisation, event) 
 
   anvil.email.send(
