@@ -1,0 +1,24 @@
+allow_embedding: false
+correct_dependency_ids: {dep_lin1x4oec0ytd: 4UK6WHQ6UX7AKELK}
+dependencies:
+- config: {}
+  dep_id: dep_lin1x4oec0ytd
+  resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
+  version: {version_tag: v1.2.5}
+name: Clone of PDF Tutorial
+native_deps: null
+package_name: PDF_Tutorial
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-full
+  version: 3
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+startup: {module: Form1, type: form}
+startup_form: null
