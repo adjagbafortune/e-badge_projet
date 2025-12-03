@@ -33,3 +33,7 @@ class Form1(Form1Template):
   def date_dropdown_change(self, **event_args):
     """This method is called when an item is selected"""
     pass
+
+  def heading_1_show(self, **event_args):
+    """This method is called when the component is shown on the screen."""
+    pass
