@@ -29,3 +29,7 @@ class Form1(Form1Template):
   def name_box_pressed_enter(self, **event_args):
     """This method is called when the user presses enter in this component."""
     pass
+
+  def date_dropdown_change(self, **event_args):
+    """This method is called when an item is selected"""
+    pass
