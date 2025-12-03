@@ -1,0 +1,11 @@
+.anvil-role-background-custom {
+  background-color: #003057 !important;
+}
+/* Définit Montserrat comme police de base pour le corps du texte */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Pour les titres */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}

@@ -4,63 +4,96 @@ components:
   properties: {source: _/theme/qr-code.png}
   type: Image
 - data_bindings: []
-  event_bindings: {show: heading_1_show}
-  layout_properties: {full_width_row: false, grid_position: 'NUCMHO,SXOVRC', row_background: 'theme:Error'}
-  name: heading_1
+  event_bindings: {show: Titre_show}
+  layout_properties: {full_width_row: false, grid_position: 'NUCMHO,SXOVRC', row_background: ''}
+  name: Titre
   properties:
     align: center
-    bold: true
+    background_color: ''
+    bold: false
+    border: ''
     font_size: 20
-    icon: mi:13mp
-    icon_size: 38
+    icon: ''
+    icon_color: ''
+    icon_size: null
     italic: false
     scale: medium
     spacing:
       margin: ['8', null, '8', null]
       padding: [null, null, null, '24']
-    text: Event Registration
-    text_color: theme:On Tertiary
+    text: 🔒 Inscription pour badge d'accès à nos cours
+    text_color: '#000000'
     underline: false
     visible: true
   type: form:dep_lin1x4oec0ytd:_Components.Heading
 - components:
   - components:
     - layout_properties: {slot: card-content-container-slot}
-      name: text_1
-      properties: {text: 'Full Name:'}
+      name: name
+      properties: {text: Nom complet}
       type: form:dep_lin1x4oec0ytd:_Components.Text
     - layout_properties: {slot: card-content-container-slot}
-      name: name_box
-      properties: {appearance: outlined}
+      name: nom_complet_box
+      properties: {align: left, appearance: outlined, character_limit: 50, label_bold: false, label_italic: false, label_underline: false, placeholder: Nom & Prénom(s), text: '', visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
     - layout_properties: {slot: card-content-container-slot}
-      name: text_2
+      name: titre
+      properties: {text: Titre/Fonction}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {slot: card-content-container-slot}
+      name: titre_box
+      properties: {align: left, appearance: outlined, character_limit: 30, label_bold: false, label_italic: false, label_underline: false, placeholder: 'Ex: Développeur, Stagiaire', text: ''}
+      type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
+    - layout_properties: {slot: card-content-container-slot}
+      name: organisation
+      properties: {text: Organisation}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {slot: card-content-container-slot}
+      name: organisation_box
+      properties: {align: left, appearance: outlined, character_limit: 50, label_bold: false, label_italic: false, label_underline: false, placeholder: Champ de saisie pour entreprise ou école, text: ''}
+      type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
+    - layout_properties: {slot: card-content-container-slot}
+      name: email
       properties:
         spacing:
-          margin: ['32', null, null, null]
-        text: 'Email Address:'
+          margin: [0, null, null, null]
+        text: 'Adresse E-mail '
       type: form:dep_lin1x4oec0ytd:_Components.Text
     - layout_properties: {slot: card-content-container-slot}
       name: email_box
-      properties: {appearance: outlined}
+      properties:
+        appearance: outlined
+        margin: [null, null, '12', null]
+        placeholder: Votre mail professionnel
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
-    - event_bindings: {change: date_dropdown_change}
+    - layout_properties: {slot: card-content-container-slot}
+      name: event
+      properties:
+        spacing:
+          margin: ['0', null, '0', null]
+          padding: ['0', null, '0', null]
+        text: Cours/Événement
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - event_bindings: {change: evenement_dropdown_change}
       layout_properties: {slot: card-content-container-slot}
-      name: date_dropdown
+      name: evenement_dropdown
       properties:
         items: ['Saturday, July 5, 2025', 'Saturday, July 12, 2025', 'Saturday, July 19, 2025']
-        margin: ['24', null, null, null]
+        margin: [0, null, null, null]
         placeholder: choose date
       type: form:dep_lin1x4oec0ytd:_Components.DropdownMenu
-    - event_bindings: {click: register_button_click}
+    - event_bindings: {click: badge_button_click}
       layout_properties: {slot: card-content-container-slot}
       name: register_button
       properties:
         align: center
+        appearance: elevated
         spacing:
           margin: ['24', null, null, null]
-        text: REGISTER
+        text: OBTENIR MON BADGE
       type: form:dep_lin1x4oec0ytd:_Components.Button
+    data_bindings: []
+    event_bindings: {show: card_content_container_1_show}
     layout_properties: {slot: card-content-slot}
     name: card_content_container_1
     properties:
