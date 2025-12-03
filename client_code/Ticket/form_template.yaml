@@ -4,78 +4,7 @@ components:
     name: image_2
     properties: {background: '#ffffff', display_mode: shrink_to_fit, source: _/theme/qr-code-logo.png}
     type: Image
-  - components:
-    - components:
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO GKGECN,IWUPIW'}
-        name: name_label
-        properties:
-          bold: true
-          font_size: 24
-          spacing:
-            margin: ['4', null, '4', null]
-            padding: ['8', null, '8', null]
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO KXWBOH,TDTUYG'}
-        name: date_label
-        properties:
-          bold: true
-          font_size: 16
-          spacing:
-            margin: [null, null, '8', null]
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO IPVOZI,XLADWK'}
-        name: title_label
-        properties:
-          bold: true
-          font_size: 16
-          spacing:
-            margin: [null, null, '8', null]
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO FGAXMU,BYWYCS'}
-        name: organisation_label
-        properties:
-          bold: true
-          font_size: 16
-          spacing:
-            margin: [null, null, '8', null]
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO SSOUFA,BBMKZC'}
-        name: event_label
-        properties:
-          bold: true
-          font_size: 16
-          spacing:
-            margin: [null, null, '8', null]
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO AZZTQJ,HTSNPU'}
-        name: text_2
-        properties:
-          font_size: 16
-          spacing:
-            margin: ['8', null, null, null]
-            padding: [null, null, null, null]
-          text: 7:00 PM • Central Park Amphitheater, NYC
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      - layout_properties: {grid_position: 'NTOFAZ,PDFFUY'}
-        name: image_1
-        properties: {height: 246, horizontal_align: right, source: _/theme/E-badge-ingenieures.jpg}
-        type: Image
-      - layout_properties: {grid_position: 'NTOFAZ,YRGGAO WZURRE,ABHIEA'}
-        name: text_3
-        properties:
-          spacing:
-            padding: ['8', null, '8', null]
-          text: General Admission - Admits One
-        type: form:dep_lin1x4oec0ytd:_Components.Text
-      layout_properties: {slot: card-content-container-slot}
-      name: column_panel_1
-      properties: {col_widths: '{"YRGGAO":35,"PDFFUY":25}'}
-      type: ColumnPanel
-    - event_bindings: {show: text_4_show}
-      layout_properties: {slot: card-content-container-slot}
-      name: text_4
-      properties: {font_size: 12, scale: medium, text: 'No refunds • Doors open 6:00 PM • summermusicfest.com', text_color: 'theme:On Disabled'}
-      type: form:dep_lin1x4oec0ytd:_Components.Text
+  - components: []
     layout_properties: {slot: card-content-slot}
     name: card_content_container_1
     properties: {}
@@ -84,5 +13,81 @@ components:
   name: card_1
   properties: {}
   type: form:dep_lin1x4oec0ytd:_Components.Card
-container: {type: ColumnPanel}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'NTOFAZ,YRGGAO AZZTQJ,HTSNPU'}
+      name: text_2
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: ['8', null, null, null]
+          padding: [null, null, null, null]
+        text: 7:00 PM • Central Park Amphitheater, NYC
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {grid_position: 'NTOFAZ,PDFFUY'}
+      name: image_1
+      properties: {height: 246, horizontal_align: right, source: _/theme/E-badge-ingenieures.jpg}
+      type: Image
+    - layout_properties: {grid_position: 'NTOFAZ,YRGGAO WZURRE,ABHIEA'}
+      name: text_3
+      properties:
+        align: center
+        spacing:
+          padding: ['8', null, '8', null]
+        text: General Admission - Admits One
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {grid_position: 'YXFMMT,AIMFHY'}
+      name: name_label
+      properties: {align: center, bold: true, font_family: Montserrat, font_size: null, icon: 'mi:user_attributes', icon_color: '#f0c300', icon_size: 30, italic: false, style: headline}
+      type: form:dep_lin1x4oec0ytd:_Components.Heading
+    layout_properties: {slot: card-content-slot}
+    name: column_panel_1
+    properties: {background: 'theme:On Secondary', col_widths: '{"YRGGAO":35,"PDFFUY":25}', wrap_on: mobile}
+    type: ColumnPanel
+  - layout_properties: {slot: card-content-slot}
+    name: date_label
+    properties:
+      bold: true
+      font_size: 16
+      spacing:
+        margin: [null, null, '8', null]
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {slot: card-content-slot}
+    name: title_label
+    properties:
+      bold: true
+      font_size: 16
+      spacing:
+        margin: [null, null, '8', null]
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {slot: card-content-slot}
+    name: organisation_label
+    properties:
+      bold: true
+      font_size: 16
+      spacing:
+        margin: [null, null, '8', null]
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {slot: card-content-slot}
+    name: event_label
+    properties:
+      bold: true
+      font_size: 16
+      spacing:
+        margin: [null, null, '8', null]
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - event_bindings: {show: text_4_show}
+    layout_properties: {slot: card-content-slot}
+    name: text_4
+    properties: {font_size: 12, scale: medium, text: 'No refunds • Doors open 6:00 PM • summermusicfest.com', text_color: 'theme:On Disabled'}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  data_bindings: []
+  layout_properties: {full_width_row: false, grid_position: 'NJOGUP,OCVAHF'}
+  name: card_2
+  properties: {align: center, appearance: elevated, background_color: 'theme:On Primary', border: 1px solid black, orientation: column, visible: true}
+  type: form:dep_lin1x4oec0ytd:_Components.Card
+container:
+  properties: {visible: true}
+  type: ColumnPanel
 is_package: true

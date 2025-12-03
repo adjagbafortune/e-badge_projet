@@ -30,10 +30,10 @@ def send_pdf_email(email, name, title, organisation, event):
 
   anvil.email.send(
     from_address='no-reply',
-    from_name='Events & Certificats', 
+    from_name='Digital Pulse', 
     to=email, 
     subject='Votre Badge d\'Accès',
-    text='Merci de votre inscription ! Votre badge est joint à cet e-mail. Veuillez le conserver pour l\'accès.',
+    text='Merci de votre inscription ! Votre badge est joint à cet e-mail. Veuillez le conserver pour votre identification ou pour accéder aux différentes zones de l\'événement.',
     attachments=pdf
   )
   return pdf
