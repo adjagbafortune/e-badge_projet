@@ -25,3 +25,7 @@ class Form1(Form1Template):
   
     else:
       alert('You have not completed all required fields')
+
+  def name_box_pressed_enter(self, **event_args):
+    """This method is called when the user presses enter in this component."""
+    pass
