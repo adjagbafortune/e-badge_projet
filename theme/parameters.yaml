@@ -13,7 +13,7 @@ color_scheme:
   - {color: '#FFFFFF', name: On Tertiary}
   - {color: '#001F28', name: On Tertiary Container}
   - {color: '#BA1A1A', name: Error}
-  - {color: '#FBFDF8', name: Background}
+  - {color: '#FFFFFF', name: Background}
   - {color: '#F8FAF6', name: Surface}
   - {color: '#191C1A', name: On Background}
   - {color: '#191C1A', name: On Surface}
@@ -31,7 +31,7 @@ color_scheme:
   - {color: 'rgba(0, 108, 72, 0.11)', name: Primary Overlay 3}
   - {color: '#C0C9C1', name: Outline Variant}
   - {color: '#FFFFFF', name: On Error}
-  - {color: '#F2F4F0', name: Surface Container Low}
+  - {color: '#003057', name: Surface Container Low}
   - {color: '#E4EAE3', name: Surface Container High}
   - {color: '#E1E3DF', name: Surface Container Highest}
   - {color: 'rgba(25, 28, 26, 0.04)', name: Disabled Container 2}

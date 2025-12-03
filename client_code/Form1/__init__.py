@@ -42,3 +42,7 @@ class Form1(Form1Template):
 
     else:
       alert('Veuillez remplir tous les champs requis.')
+
+  def card_content_container_1_show(self, **event_args):
+    """This method is called when the component is shown on the screen."""
+    pass

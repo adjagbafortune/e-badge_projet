@@ -29,75 +29,68 @@ components:
 - components:
   - components:
     - layout_properties: {slot: card-content-container-slot}
-      name: name
-      properties: {text: Nom complet}
-      type: form:dep_lin1x4oec0ytd:_Components.Text
-    - layout_properties: {slot: card-content-container-slot}
       name: nom_complet_box
-      properties: {align: left, appearance: outlined, character_limit: 50, label_bold: false, label_italic: false, label_underline: false, placeholder: Nom & Prénom(s), text: '', visible: true}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: NOM COMPLET, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: Nom & Prénom(s), subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
-    - layout_properties: {slot: card-content-container-slot}
-      name: titre
-      properties: {text: Titre/Fonction}
-      type: form:dep_lin1x4oec0ytd:_Components.Text
     - layout_properties: {slot: card-content-container-slot}
       name: titre_box
-      properties: {align: left, appearance: outlined, character_limit: 30, label_bold: false, label_italic: false, label_underline: false, placeholder: 'Ex: Développeur, Stagiaire', text: ''}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 30, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: TITRE-FONCTION, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: 'Ex: Développeur, Stagiaire', subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
-    - layout_properties: {slot: card-content-container-slot}
-      name: organisation
-      properties: {text: Organisation}
-      type: form:dep_lin1x4oec0ytd:_Components.Text
     - layout_properties: {slot: card-content-container-slot}
       name: organisation_box
-      properties: {align: left, appearance: outlined, character_limit: 50, label_bold: false, label_italic: false, label_underline: false, placeholder: Champ de saisie pour entreprise ou école, text: ''}
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: Organisation, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: Vous êtes une entreprise ou une école (pas obligatoire), subcontent_color: 'theme:On Primary', text: '', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
-    - layout_properties: {slot: card-content-container-slot}
-      name: email
-      properties:
-        spacing:
-          margin: [0, null, null, null]
-        text: 'Adresse E-mail '
-      type: form:dep_lin1x4oec0ytd:_Components.Text
     - layout_properties: {slot: card-content-container-slot}
       name: email_box
-      properties:
-        appearance: outlined
-        margin: [null, null, '12', null]
-        placeholder: Votre mail professionnel
+      properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: null, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: Adresse E-mail, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: '', leading_icon_color: '', placeholder: Votre mail professionnel, subcontent_color: 'theme:On Primary', text: '', type: email, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
-    - layout_properties: {slot: card-content-container-slot}
-      name: event
-      properties:
-        spacing:
-          margin: ['0', null, '0', null]
-          padding: ['0', null, '0', null]
-        text: Cours/Événement
-      type: form:dep_lin1x4oec0ytd:_Components.Text
-    - event_bindings: {change: evenement_dropdown_change}
+    - data_bindings: []
       layout_properties: {slot: card-content-container-slot}
       name: evenement_dropdown
       properties:
-        items: ['Saturday, July 5, 2025', 'Saturday, July 12, 2025', 'Saturday, July 19, 2025']
-        margin: [0, null, null, null]
-        placeholder: choose date
+        appearance: filled
+        background_color: '#f0c300'
+        border_color: theme:On Primary
+        items: ['', 'Saturday, July 5, 2025', 'Saturday, July 12, 2025', 'Saturday, July 19, 2025']
+        label: Cours&Events
+        label_bold: true
+        label_color: theme:On Secondary Container
+        label_font_family: ''
+        label_font_size: null
+        label_italic: false
+        label_underline: false
+        menu_background_color: theme:On Primary
+        placeholder: Sélectionnez votre cours...
+        supporting_text: ''
       type: form:dep_lin1x4oec0ytd:_Components.DropdownMenu
-    - event_bindings: {click: badge_button_click}
+    - data_bindings: []
+      event_bindings: {click: badge_button_click}
       layout_properties: {slot: card-content-container-slot}
       name: register_button
       properties:
         align: center
         appearance: elevated
+        background_color: theme:On Primary
+        bold: true
+        font_family: poppins
+        font_size: null
+        icon: mi:10mp
+        icon_color: '#000'
+        icon_size: null
+        italic: false
+        role: ''
         spacing:
           margin: ['24', null, null, null]
         text: OBTENIR MON BADGE
+        text_color: '#000'
+        underline: false
       type: form:dep_lin1x4oec0ytd:_Components.Button
     data_bindings: []
     event_bindings: {show: card_content_container_1_show}
     layout_properties: {slot: card-content-slot}
     name: card_content_container_1
     properties:
-      margin: ['16', '16', '16', '16']
+      margin: ['50', '16', '20', '16']
     type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
   layout_properties: {grid_position: 'CAVRJX,VAYAOT'}
   name: card_1
