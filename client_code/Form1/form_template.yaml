@@ -12,6 +12,21 @@ components:
 - components:
   - components:
     - layout_properties: {slot: card-content-container-slot}
+      name: heading_1
+      properties:
+        align: center
+        background_color: ''
+        bold: true
+        font_family: Montserrat
+        font_size: 14
+        italic: false
+        spacing:
+          margin: [null, null, '8', null]
+        text: COLLECTE - TRAITEMENT - DISTRIBUTION
+        text_color: theme:On Primary
+        underline: false
+      type: form:dep_lin1x4oec0ytd:_Components.Heading
+    - layout_properties: {slot: card-content-container-slot}
       name: nom_complet_box
       properties: {align: left, appearance: outlined, border_color: 'theme:On Primary', character_limit: 50, display_bold: false, display_font_family: Montserrat, display_font_size: null, display_italic: false, display_text_color: 'theme:On Primary', display_underline: false, enabled: true, error: false, hide_text: false, label: NOM COMPLET, label_bold: true, label_color: 'theme:On Primary', label_font_family: '', label_font_size: null, label_italic: false, label_underline: false, leading_icon: 'mi:user_attributes', leading_icon_color: '#f0c300', placeholder: Nom & Prénom(s), subcontent_color: 'theme:On Primary', text: '', trailing_icon: '', trailing_icon_color: 'theme:On Primary', type: text, visible: true}
       type: form:dep_lin1x4oec0ytd:_Components.TextInput.TextBox
@@ -75,7 +90,7 @@ components:
     layout_properties: {slot: card-content-slot}
     name: card_content_container_1
     properties:
-      margin: ['50', '16', '20', '16']
+      margin: ['20', '16', '20', '16']
     type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
   - components:
     - event_bindings: {click: link_1_click}

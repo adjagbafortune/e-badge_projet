@@ -5,7 +5,7 @@ dependencies:
   dep_id: dep_lin1x4oec0ytd
   resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
   version: {version_tag: v1.2.5}
-metadata: {logo_img: 'asset:e-badge.jpg', title: E-Badge}
+metadata: {description: Générateur de badge électronique, logo_img: 'asset:E-Badge-logo.png', title: E-Badge}
 name: E-Badge
 native_deps: null
 package_name: PDF_Tutorial

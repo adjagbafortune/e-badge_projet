@@ -67,16 +67,16 @@ components:
         type: form:dep_lin1x4oec0ytd:_Components.Text
       - layout_properties: {grid_position: 'NTOFAZ,YRGGAO SMFHRD,TOWQKS'}
         name: text_4_copy
-        properties: {align: left, background_color: '', font_size: 12, icon: 'mi:globe_uk', icon_size: 15, italic: true, role: '', text: digitalpulsedev.com, text_color: 'theme:On Surface Variant'}
+        properties: {align: left, background_color: '', bold: true, font_size: 12, icon: 'mi:globe_uk', icon_size: 15, italic: true, role: '', text: digitalpulsedev.com, text_color: 'theme:On Surface Variant'}
         type: form:dep_lin1x4oec0ytd:_Components.Text
       - layout_properties: {grid_position: 'NTOFAZ,PDFFUY', row_background: ''}
         name: image_1
         properties:
-          display_mode: shrink_to_fit
+          display_mode: zoom_to_fill
           height: 193
           horizontal_align: center
           margin: ['0', null, '0', null]
-          source: _/theme/8321898.jpg
+          source: _/theme/E-Badge.png
           spacing_above: small
           spacing_below: small
           vertical_align: center
