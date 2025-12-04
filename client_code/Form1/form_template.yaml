@@ -9,10 +9,6 @@ components:
     source: _/theme/qr-code.png
     vertical_align: center
   type: Image
-- layout_properties: {grid_position: 'AETYQT,YPBUJP'}
-  name: image_2
-  properties: {}
-  type: Image
 - components:
   - components:
     - layout_properties: {slot: card-content-container-slot}
