@@ -5,8 +5,9 @@ components:
     alt_text: llllll
     border: ''
     display_mode: original_size
+    height: 176
     margin: [null, null, '0', null]
-    source: _/theme/qr-code.png
+    source: _/theme/logo-digitalpulse.png
     vertical_align: center
   type: Image
 - components:
